@@ -1,0 +1,21 @@
+{
+  "name": "Maggot BSF Balikpapan",
+  "short_name": "Maggot BSF",
+  "description": "Solusi biokonversi limbah organik menjadi pakan berkualitas tinggi untuk ternak dan perikanan",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#16a34a",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "id-ID",
+  "categories": ["business", "productivity"],
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

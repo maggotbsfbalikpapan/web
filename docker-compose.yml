@@ -1,0 +1,24 @@
+services:
+  web:
+    build:
+      no_cache: True
+      dockerfile_inline: >
+        FROM oven/bun:1.3-alpine AS builder
+
+        WORKDIR /usr/web
+
+        COPY ./web/package.json \
+            ./web/bun.lock \
+            ./
+
+        RUN ["bun", "install", "--no-cache", "--verbose"]
+
+        COPY ./web/ ./
+
+        RUN ["bun", "run", "build"]
+
+        FROM rtsp/lighttpd:1.4.76
+
+        COPY --from=builder /usr/web/dist/ /var/www/html/
+    ports:
+      - 8080:80
