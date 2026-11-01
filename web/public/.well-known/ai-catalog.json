@@ -1,0 +1,29 @@
+{
+  "specVersion": "1.0",
+  "entries": [
+    {
+      "@context": "https://agenticresourcediscovery.org/context/v1",
+      "identifier": "urn:air:maggotbsfbalikpapan.com:website",
+      "displayName": "Maggot BSF Balikpapan",
+      "type": "application/ai-catalog+json",
+      "url": "https://maggotbsfbalikpapan.com/.well-known/ai-catalog.json",
+      "description": "Website resmi usaha budidaya black soldier fly (BSF) di Balikpapan: pengolahan limbah organik menjadi pakan ternak dan ikan berkualitas tinggi, plus kanal konsultasi dan pemesanan via WhatsApp.",
+      "tags": [
+        "maggot",
+        "black soldier fly",
+        "biokonversi",
+        "limbah organik",
+        "pakan ternak",
+        "pakan ikan",
+        "balikpapan"
+      ],
+      "representativeQueries": [
+        "tempat maggot bsf balikpapan",
+        "jual pakan maggot di balikpapan",
+        "pengolahan limbah organik balikpapan",
+        "konsultasi budidaya maggot bsf"
+      ],
+      "updatedAt": "2026-11-01T00:00:00Z"
+    }
+  ]
+}

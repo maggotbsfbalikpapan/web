@@ -1,0 +1,19 @@
+# Maggot BSF Balikpapan
+
+> Usaha budidaya black soldier fly (BSF) di Balikpapan yang mengolah limbah organik
+> menjadi pakan ternak dan ikan berkualitas tinggi, dengan pengalaman 6+ tahun.
+
+Halaman ini menyediakan ringkasan layanan, manfaat biokonversi, konten edukasi
+budidaya, profil usaha, dan kanal kontak untuk konsultasi serta pemesanan langsung.
+
+Kontak utama:
+
+- WhatsApp: [https://api.whatsapp.com/send?phone=6281325595775](https://api.whatsapp.com/send?phone=6281325595775): +62 813-2559-5775 untuk konsultasi dan pemesanan
+- Instagram: [https://www.instagram.com/maggotbsfbalikpapan](https://www.instagram.com/maggotbsfbalikpapan): akun resmi dengan konten edukasi budidaya
+- Alamat: Jl. Prapatan Dalam, Kel. Telaga Sari RT 02 No. 62, Balikpapan Kota, Kalimantan Timur
+- Peta: [https://maps.app.goo.gl/1kZe5HmQXoSHX3ZKA](https://maps.app.goo.gl/1kZe5HmQXoSHX3ZKA): lokasi usaha di Balikpapan
+
+## Halaman
+
+- [Beranda](https://maggotbsfbalikpapan.com/): halaman utama berisi layanan biokonversi, manfaat, edukasi, tentang kami, dan kontak
+- [Sitemap](https://maggotbsfbalikpapan.com/sitemap.xml): daftar indeks halaman untuk mesin pencari

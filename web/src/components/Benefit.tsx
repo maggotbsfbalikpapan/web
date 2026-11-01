@@ -1,69 +1,68 @@
 import { Leaf, Recycle, Worm } from "lucide-react";
+import { SECTION_CLASS } from "../constants";
 
 export default function () {
+  const items = [
+    {
+      icon: Recycle,
+      title: "Pengelolaan Limbah",
+      desc: "Larva BSF mengonsumsi limbah organik dengan cepat, mengubah sampah menjadi sumber daya bernilai tinggi.",
+    },
+    {
+      icon: Worm,
+      title: "Pakan Berkualitas",
+      desc: "Larva kaya protein dan lemak esensial, ideal untuk pakan unggas, ikan, dan hewan ternak.",
+    },
+    {
+      icon: Leaf,
+      title: "Ramah Lingkungan",
+      desc: "Proses budidaya minim emisi dan mengurangi dampak pengelolaan limbah konvensional.",
+    },
+  ];
+
   return (
-    <section
-      id="benefits"
-      className="bg-gradient-to-b from-gray-50 to-white py-20 lg:py-32"
-    >
-      <div className="container mx-auto animate-slide-up px-6">
-        <div className="mb-16 text-center">
-          <h2 className="mb-6 font-black text-3xl text-gray-800 md:text-4xl lg:text-5xl">
-            Manfaat Maggot BSF
-          </h2>
-          <div className="mx-auto h-2 w-24 rounded-full bg-gradient-to-r from-green-500 to-green-600" />
-          <p className="mx-auto mt-6 max-w-3xl text-gray-600 text-lg leading-relaxed md:text-xl">
-            Maggot BSF menawarkan berbagai keunggulan dalam pengelolaan limbah
-            organik dan produksi pakan berkualitas tinggi
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          <div className="group hover:-translate-y-2 relative overflow-hidden rounded-2xl border border-gray-100 bg-white p-8 shadow-lg transition-all hover:shadow-2xl">
-            <div className="absolute inset-0 bg-gradient-to-br from-green-50 to-green-100 opacity-0 transition-opacity group-hover:opacity-100" />
-            <div className="relative z-10">
-              <div className="mb-6 inline-flex rounded-2xl bg-gradient-to-br from-green-100 to-green-200 p-4 transition-transform group-hover:scale-110">
-                <Recycle className="h-8 w-8 text-green-600" />
-              </div>
-              <h3 className="mb-4 font-bold text-gray-800 text-xl md:text-2xl">
-                Pengelolaan Limbah
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                Mengurangi limbah organik melalui konsumsi cepat larva BSF,
-                mengubah sampah menjadi sumber daya bernilai tinggi.
-              </p>
-            </div>
+    <section id="benefits" className={SECTION_CLASS}>
+      <div className="container mx-auto px-6">
+        <div className="grid gap-8 lg:grid-cols-12">
+          <div className="lg:col-span-4">
+            <h2 className="font-display text-5xl text-ink leading-tight tracking-tight md:text-6xl">
+              Manfaat
+              <br />
+              Maggot BSF
+            </h2>
+            <p className="mt-4 text-lg text-muted">
+              Keunggulan dalam pengelolaan limbah organik dan produksi pakan
+              berkualitas tinggi.
+            </p>
           </div>
-
-          <div className="group hover:-translate-y-2 relative overflow-hidden rounded-2xl border border-gray-100 bg-white p-8 shadow-lg transition-all hover:shadow-2xl">
-            <div className="absolute inset-0 bg-gradient-to-br from-green-50 to-green-100 opacity-0 transition-opacity group-hover:opacity-100" />
-            <div className="relative z-10">
-              <div className="mb-6 inline-flex rounded-2xl bg-gradient-to-br from-green-100 to-green-200 p-4 transition-transform group-hover:scale-110">
-                <Worm className="h-8 w-8 text-green-600" />
-              </div>
-              <h3 className="mb-4 font-bold text-gray-800 text-xl md:text-2xl">
-                Pakan Berkualitas
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                Larva BSF kaya protein dan lemak esensial, ideal untuk pakan
-                unggas, ikan, dan hewan ternak lainnya.
-              </p>
-            </div>
-          </div>
-
-          <div className="group hover:-translate-y-2 relative overflow-hidden rounded-2xl border border-gray-100 bg-white p-8 shadow-lg transition-all hover:shadow-2xl md:col-span-2 lg:col-span-1">
-            <div className="absolute inset-0 bg-gradient-to-br from-green-50 to-green-100 opacity-0 transition-opacity group-hover:opacity-100" />
-            <div className="relative z-10">
-              <div className="mb-6 inline-flex rounded-2xl bg-gradient-to-br from-green-100 to-green-200 p-4 transition-transform group-hover:scale-110">
-                <Leaf className="h-8 w-8 text-green-600" />
-              </div>
-              <h3 className="mb-4 font-bold text-gray-800 text-xl md:text-2xl">
-                Ramah Lingkungan
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                Proses budidaya BSF minim emisi dan mengurangi dampak lingkungan
-                dari pengelolaan limbah konvensional.
-              </p>
+          <div className="lg:col-span-8">
+            <div className="divide-y divide-muted/20 border-muted/20 border-y">
+              {items.map((item, index) => {
+                const Icon = item.icon;
+                return (
+                  <div
+                    key={item.title}
+                    className="grid gap-x-4 gap-y-2 py-4 md:grid-cols-12"
+                  >
+                    <div className="md:col-span-1">
+                      <span className="tabular font-display text-3xl text-deep">
+                        0{index + 1}
+                      </span>
+                    </div>
+                    <div className="md:col-span-5">
+                      <div className="flex items-center gap-3">
+                        <Icon className="h-5 w-5 text-deep" />
+                        <h3 className="font-display text-2xl text-ink">
+                          {item.title}
+                        </h3>
+                      </div>
+                    </div>
+                    <p className="text-lg text-muted md:col-span-6">
+                      {item.desc}
+                    </p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>

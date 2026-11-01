@@ -7,7 +7,12 @@
   },
   "files": {
     "ignoreUnknown": false,
-    "ignore": ["./tsconfig.app.json", "./tsconfig.node.json"]
+    "ignore": [
+      "./tsconfig.app.json",
+      "./tsconfig.node.json",
+      "./dist",
+      "./node_modules"
+    ]
   },
   "formatter": {
     "enabled": true,
@@ -20,9 +25,6 @@
     "enabled": true,
     "rules": {
       "recommended": true,
-      "security": {
-        "noDangerouslySetInnerHtml": "off"
-      },
       "nursery": {
         "useSortedClasses": "error"
       }

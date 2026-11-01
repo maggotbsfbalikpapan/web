@@ -1,12 +1,10 @@
-import {
-  About,
-  Benefit,
-  Contact,
-  Education,
-  Footer,
-  Header,
-  Home,
-} from "./components";
+import About from "./components/About";
+import Benefit from "./components/Benefit";
+import Contact from "./components/Contact";
+import Education from "./components/Education";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Home from "./components/Home";
 
 export default function App() {
   return (
